@@ -3,35 +3,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fffaf7">
-  <title>#RoRo | Rohith & Roja</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf6">
+  <title>#RoRo — Rohith &amp; Roja</title>
 
   <link rel="stylesheet" href="styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Falling petals -->
-  <div class="petals" aria-hidden="true">
+  <div class="petal-layer" aria-hidden="true">
     <span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span>
+    <span></span><span></span>
   </div>
 
   <!-- Navigation -->
-  <nav class="navigation">
-    <a href="#home" class="logo">
-      <img src="assets/roro-logo.png" alt="RoRo gold rose monogram">
+  <nav class="topline">
+    <a href="#home" class="brand">
+      <img src="assets/roro-logo.png" alt="RoRo rose monogram">
+      <span>#RoRo</span>
     </a>
 
     <div class="nav-links">
       <a href="#home">Home</a>
-      <a href="#celebration">Celebration</a>
+      <a href="#celebrate">Celebration</a>
       <a href="#gallery">Gallery</a>
       <a href="#venue">Venue</a>
     </div>
@@ -39,6 +39,29 @@
 
   <!-- Hero -->
   <header class="hero" id="home">
+
+    <div class="floral-corner floral-left" aria-hidden="true">
+      <svg viewBox="0 0 180 220">
+        <path d="M20 210 Q70 130 105 20" />
+        <path d="M55 145 Q10 125 18 90 Q55 95 55 145Z" />
+        <path d="M78 100 Q125 95 130 60 Q90 60 78 100Z" />
+        <path d="M92 55 Q55 55 58 25 Q90 20 92 55Z" />
+        <path d="M35 180 Q80 165 95 140" />
+        <path d="M105 20 Q135 8 145 30 Q140 55 115 45 Q95 38 105 20Z" />
+      </svg>
+    </div>
+
+    <div class="floral-corner floral-right" aria-hidden="true">
+      <svg viewBox="0 0 180 220">
+        <path d="M20 210 Q70 130 105 20" />
+        <path d="M55 145 Q10 125 18 90 Q55 95 55 145Z" />
+        <path d="M78 100 Q125 95 130 60 Q90 60 78 100Z" />
+        <path d="M92 55 Q55 55 58 25 Q90 20 92 55Z" />
+        <path d="M35 180 Q80 165 95 140" />
+        <path d="M105 20 Q135 8 145 30 Q140 55 115 45 Q95 38 105 20Z" />
+      </svg>
+    </div>
+
     <div class="hero-content">
       <p class="eyebrow">Together with our families</p>
 
@@ -46,174 +69,290 @@
 
       <p class="hashtag">#RoRo</p>
 
-      <div class="ornament"></div>
+      <div class="gold-divider"><span></span></div>
 
       <p class="hero-message">
         Two hearts, one beautiful journey.<br>
-        A new chapter begins, and we'd love you to be there.
+        We would love for you to celebrate with us.
       </p>
 
-      <div class="date-display">
+      <div class="hero-date">
         <span>SATURDAY</span>
         <strong>19</strong>
         <span>DECEMBER 2026</span>
       </div>
 
-      <a href="#celebration" class="button">Celebrate with us</a>
+      <a href="#celebrate" class="main-button">Join the celebration</a>
     </div>
   </header>
 
   <main>
 
-    <!-- Welcome -->
-    <section class="welcome section" id="welcome">
-      <p class="eyebrow">A day to remember</p>
+    <!-- Illustrated couple section -->
+    <section class="welcome-section">
+      <p class="eyebrow">A beautiful beginning</p>
       <h2>Love is in the little details</h2>
 
-      <p class="section-text">
-        With hearts full of happiness, we invite you to join us
-        as we celebrate love, family and the beginning of forever.
+      <p class="section-intro">
+        With hearts full of joy, we invite you to be part of
+        our special day as we begin a new chapter together.
       </p>
 
-      <div class="feature-photo">
-        <img
-          src="https://images.unsplash.com/photo-1549576207-72dd5179984b?auto=format&fit=crop&w=1400&q=85"
-          alt="Romantic pink and white wedding flower bouquet"
-        >
+      <div class="couple-illustration">
+
+        <div class="illustration-flower flower-one">
+          <svg viewBox="0 0 100 100">
+            <g fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M50 50 C15 35 30 5 50 30 C70 5 85 35 50 50Z"/>
+              <path d="M50 50 C15 65 30 95 50 70 C70 95 85 65 50 50Z"/>
+              <path d="M50 50 C35 15 5 30 30 50 C5 70 35 85 50 50Z"/>
+              <path d="M50 50 C65 15 95 30 70 50 C95 70 65 85 50 50Z"/>
+              <circle cx="50" cy="50" r="7"/>
+            </g>
+          </svg>
+        </div>
+
+        <svg class="couple-art" viewBox="0 0 500 390" role="img" aria-label="Romantic illustrated bride and groom surrounded by flowers">
+          <!-- Soft watercolor background -->
+          <ellipse cx="250" cy="340" rx="190" ry="28" fill="#e9e6d9" opacity=".55"/>
+          <circle cx="250" cy="170" r="145" fill="#f5e4e5" opacity=".55"/>
+
+          <!-- Decorative leaves -->
+          <g fill="#a6b99d" opacity=".8">
+            <path d="M70 290 Q15 245 40 205 Q85 225 70 290Z"/>
+            <path d="M92 300 Q70 245 110 225 Q130 265 92 300Z"/>
+            <path d="M425 290 Q480 245 455 205 Q410 225 425 290Z"/>
+            <path d="M408 300 Q430 245 390 225 Q370 265 408 300Z"/>
+          </g>
+
+          <!-- Groom hair -->
+          <path d="M170 115 Q165 45 230 48 Q300 43 300 120 L290 175 L180 175Z" fill="#51423e"/>
+
+          <!-- Groom face -->
+          <ellipse cx="225" cy="135" rx="52" ry="65" fill="#c98f75"/>
+          <path d="M174 115 Q175 65 225 67 Q278 65 277 120 Q255 90 226 94 Q195 93 174 115Z" fill="#51423e"/>
+          <path d="M200 140 Q210 147 218 140 M235 140 Q245 147 252 140" fill="none" stroke="#59413b" stroke-width="3" stroke-linecap="round"/>
+          <path d="M218 165 Q230 174 242 165" fill="none" stroke="#8c4d50" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- Groom outfit -->
+          <path d="M155 350 Q155 220 225 205 Q295 220 305 350Z" fill="#71846e"/>
+          <path d="M205 212 L225 260 L246 212 L225 235Z" fill="#fffaf4"/>
+          <path d="M225 235 L225 350" stroke="#d5bd8b" stroke-width="3"/>
+
+          <!-- Bride hair -->
+          <path d="M270 125 Q260 52 325 50 Q395 53 380 145 L365 235 Q320 260 280 220Z" fill="#55423c"/>
+
+          <!-- Bride face -->
+          <ellipse cx="325" cy="137" rx="49" ry="64" fill="#dba18a"/>
+          <path d="M277 115 Q275 65 325 68 Q380 64 375 125 Q354 93 325 96 Q295 95 277 115Z" fill="#55423c"/>
+          <path d="M300 140 Q309 147 317 140 M337 140 Q346 147 354 140" fill="none" stroke="#59413b" stroke-width="3" stroke-linecap="round"/>
+          <path d="M316 166 Q328 176 341 165" fill="none" stroke="#a85e67" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- Bride veil -->
+          <path d="M278 93 Q325 5 385 95 L420 300 Q350 270 280 300Z" fill="#fffaf4" opacity=".45" stroke="#d5bd8b" stroke-width="2"/>
+
+          <!-- Bride dress -->
+          <path d="M278 218 Q325 190 372 218 Q410 275 435 350 L245 350 Q250 280 278 218Z" fill="#fffaf5" stroke="#d9c8b2" stroke-width="2"/>
+          <path d="M278 230 Q325 255 372 230" fill="none" stroke="#d9c8b2" stroke-width="2"/>
+          <path d="M285 280 Q325 300 390 280" fill="none" stroke="#eadbd0" stroke-width="2"/>
+
+          <!-- Joined hands -->
+          <path d="M270 265 Q285 245 300 260 Q310 275 295 285 Q280 292 270 265Z" fill="#c98f75"/>
+          <path d="M300 260 Q315 245 330 260 Q338 275 320 285 Q305 292 300 260Z" fill="#dba18a"/>
+
+          <!-- Small bouquet -->
+          <g fill="#c98291">
+            <circle cx="285" cy="270" r="11"/>
+            <circle cx="300" cy="257" r="10"/>
+            <circle cx="312" cy="272" r="11"/>
+            <circle cx="299" cy="278" r="10"/>
+          </g>
+          <g fill="#718b6d">
+            <path d="M299 280 L280 320 L290 318 L305 282Z"/>
+            <path d="M300 282 L320 318 L310 316 L295 282Z"/>
+          </g>
+
+          <!-- Small floating hearts -->
+          <g fill="#c98291" opacity=".75">
+            <path d="M110 100 C95 80 125 65 135 88 C145 65 175 80 155 105 L135 125Z"/>
+            <path d="M385 95 C375 82 395 72 402 88 C410 72 430 82 417 99 L402 112Z"/>
+          </g>
+
+          <!-- Ground flowers -->
+          <g fill="#d9a0a9">
+            <circle cx="95" cy="330" r="9"/>
+            <circle cx="110" cy="320" r="8"/>
+            <circle cx="125" cy="333" r="9"/>
+            <circle cx="390" cy="330" r="9"/>
+            <circle cx="405" cy="320" r="8"/>
+            <circle cx="420" cy="333" r="9"/>
+          </g>
+        </svg>
+
+        <div class="illustration-flower flower-two">
+          <svg viewBox="0 0 100 100">
+            <g fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M50 50 C15 35 30 5 50 30 C70 5 85 35 50 50Z"/>
+              <path d="M50 50 C15 65 30 95 50 70 C70 95 85 65 50 50Z"/>
+              <path d="M50 50 C35 15 5 30 30 50 C5 70 35 85 50 50Z"/>
+              <path d="M50 50 C65 15 95 30 70 50 C95 70 65 85 50 50Z"/>
+              <circle cx="50" cy="50" r="7"/>
+            </g>
+          </svg>
+        </div>
       </div>
 
-      <p class="photo-caption">
-        A celebration surrounded by beauty, love and blessings.
-      </p>
+      <p class="art-caption">A lifetime of love begins here.</p>
     </section>
 
-    <!-- Events -->
-    <section class="celebration section" id="celebration">
+    <!-- Celebration -->
+    <section class="celebration-section" id="celebrate">
       <p class="eyebrow">Save the date</p>
-      <h2>The celebration</h2>
-      <p class="section-text">
-        We look forward to sharing these special moments with you.
+      <h2>Let's celebrate!</h2>
+      <p class="section-intro">
+        A day filled with love, laughter and beautiful memories.
       </p>
 
       <div class="event-grid">
-        <article class="event-card">
-          <div class="event-photo">
-            <img
-              src="https://images.unsplash.com/photo-1595970730806-e3df09af8038?auto=format&fit=crop&w=1000&q=85"
-              alt="Elegant wedding flowers"
-              loading="lazy"
-            >
-          </div>
 
-          <div class="event-info">
-            <p class="eyebrow">The special day</p>
-            <h3>Wedding Celebration</h3>
-            <p class="event-date">Saturday, 19 December 2026</p>
-            <p class="event-time">7:00 PM</p>
-            <p class="event-description">
-              Join us as Rohith and Roja begin their forever.
-            </p>
+        <article class="event-card">
+          <div class="event-art">
+            <svg viewBox="0 0 120 100">
+              <g fill="none" stroke="#b89552" stroke-width="2">
+                <path d="M25 65 Q60 10 95 65"/>
+                <path d="M35 65 Q60 28 85 65"/>
+                <path d="M48 65 Q60 45 72 65"/>
+              </g>
+              <path d="M42 60 Q60 78 78 60" fill="none" stroke="#bd7188" stroke-width="3"/>
+              <circle cx="60" cy="38" r="7" fill="#bd7188"/>
+            </svg>
           </div>
+          <p class="event-label">The special day</p>
+          <h3>Wedding Celebration</h3>
+          <div class="card-divider"></div>
+          <p class="event-date">19 December 2026</p>
+          <p class="event-time">7:00 PM</p>
+          <p class="event-note">
+            Join us as Rohith and Roja begin their forever.
+          </p>
         </article>
 
         <article class="event-card">
-          <div class="event-photo">
-            <img
-              src="https://images.unsplash.com/photo-1775126964424-913480443772?auto=format&fit=crop&w=1000&q=85"
-              alt="Beautiful wedding reception table setting"
-              loading="lazy"
-            >
+          <div class="event-art">
+            <svg viewBox="0 0 120 100">
+              <g fill="none" stroke="#71846e" stroke-width="2">
+                <path d="M60 85 Q25 60 35 20"/>
+                <path d="M60 85 Q95 60 85 20"/>
+                <path d="M35 50 Q10 40 18 25 Q40 30 35 50Z"/>
+                <path d="M85 50 Q110 40 102 25 Q80 30 85 50Z"/>
+              </g>
+              <g fill="#d89baa">
+                <circle cx="60" cy="25" r="10"/>
+                <circle cx="48" cy="35" r="9"/>
+                <circle cx="72" cy="35" r="9"/>
+              </g>
+            </svg>
           </div>
-
-          <div class="event-info">
-            <p class="eyebrow">A gathering of loved ones</p>
-            <h3>Reception</h3>
-            <p class="event-date">Saturday, 19 December 2026</p>
-            <p class="event-time">Time to be announced</p>
-            <p class="event-description">
-              An occasion for happiness, blessings and togetherness.
-            </p>
-          </div>
+          <p class="event-label">Celebrate with us</p>
+          <h3>Reception</h3>
+          <div class="card-divider"></div>
+          <p class="event-date">19 December 2026</p>
+          <p class="event-time">Time to be announced</p>
+          <p class="event-note">
+            An evening of smiles, blessings and togetherness.
+          </p>
         </article>
+
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section class="gallery section" id="gallery">
-      <p class="eyebrow">The romance of the occasion</p>
-      <h2>Beautiful details</h2>
-      <p class="section-text">
-        A little inspiration for a day filled with elegance.
+    <!-- Decorative gallery -->
+    <section class="gallery-section" id="gallery">
+      <p class="eyebrow">A little romance</p>
+      <h2>Made with love</h2>
+      <p class="section-intro">
+        Every little detail tells a story of love.
       </p>
 
       <div class="gallery-grid">
-        <figure class="gallery-item tall">
-          <img
-            src="https://images.unsplash.com/photo-1609840533612-0cdfb9418281?auto=format&fit=crop&w=1000&q=85"
-            alt="Blush pink and white wedding flowers"
-            loading="lazy"
-          >
-          <figcaption>Flowers in full bloom</figcaption>
-        </figure>
+        <div class="art-panel pink-panel">
+          <svg viewBox="0 0 200 220">
+            <path d="M100 200 Q90 110 100 55" fill="none" stroke="#71846e" stroke-width="3"/>
+            <path d="M100 150 Q45 135 55 95 Q100 100 100 150Z" fill="#a6b99d"/>
+            <path d="M100 125 Q150 110 150 75 Q105 80 100 125Z" fill="#8da58b"/>
+            <g fill="#bd7188">
+              <circle cx="100" cy="45" r="18"/>
+              <circle cx="82" cy="58" r="15"/>
+              <circle cx="118" cy="58" r="15"/>
+              <circle cx="100" cy="70" r="14"/>
+            </g>
+            <circle cx="100" cy="55" r="7" fill="#b89552"/>
+          </svg>
+          <p>Love in bloom</p>
+        </div>
 
-        <figure class="gallery-item">
-          <img
-            src="https://images.unsplash.com/photo-1775126964424-913480443772?auto=format&fit=crop&w=1000&q=85"
-            alt="Romantic wedding reception decorations"
-            loading="lazy"
-          >
-          <figcaption>An evening to remember</figcaption>
-        </figure>
+        <div class="art-panel green-panel">
+          <svg viewBox="0 0 200 220">
+            <path d="M100 185 Q30 115 100 35 Q170 115 100 185Z" fill="#fffaf5" stroke="#b89552" stroke-width="2"/>
+            <path d="M100 185 Q100 110 100 35" fill="none" stroke="#71846e" stroke-width="2"/>
+            <path d="M100 120 Q65 80 55 105 Q65 135 100 120Z" fill="#a6b99d"/>
+            <path d="M100 140 Q135 100 150 125 Q135 150 100 140Z" fill="#8da58b"/>
+          </svg>
+          <p>Forever begins</p>
+        </div>
 
-        <figure class="gallery-item">
-          <img
-            src="https://images.unsplash.com/photo-1549576207-72dd5179984b?auto=format&fit=crop&w=1000&q=85"
-            alt="Pink and ivory bridal bouquet"
-            loading="lazy"
-          >
-          <figcaption>Every detail, with love</figcaption>
-        </figure>
+        <div class="art-panel cream-panel">
+          <svg viewBox="0 0 200 220">
+            <path d="M100 175 C35 120 60 55 100 90 C140 55 165 120 100 175Z" fill="#d99daa"/>
+            <path d="M100 175 C65 125 80 90 100 110 C120 90 135 125 100 175Z" fill="#bd7188"/>
+            <path d="M100 175 Q95 195 80 205 M100 175 Q110 195 125 205" fill="none" stroke="#71846e" stroke-width="3"/>
+          </svg>
+          <p>With all our hearts</p>
+        </div>
       </div>
     </section>
 
     <!-- Venue -->
-    <section class="venue section" id="venue">
-      <p class="eyebrow">We would love to see you</p>
-      <h2>Where to find us</h2>
+    <section class="venue-section" id="venue">
+      <p class="eyebrow">We can't wait to see you</p>
+      <h2>Find the celebration</h2>
 
       <div class="venue-card">
-        <div class="venue-image">
-          <img
-            src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=1200&q=85"
-            alt="Romantic wedding venue decoration"
-            loading="lazy"
-          >
+        <div class="venue-floral">
+          <svg viewBox="0 0 140 100">
+            <path d="M70 95 Q65 45 70 15" fill="none" stroke="#71846e" stroke-width="2"/>
+            <path d="M70 65 Q25 55 35 30 Q70 35 70 65Z" fill="#a6b99d"/>
+            <path d="M70 55 Q110 40 105 18 Q75 20 70 55Z" fill="#8da58b"/>
+            <g fill="#bd7188">
+              <circle cx="70" cy="18" r="12"/>
+              <circle cx="58" cy="28" r="10"/>
+              <circle cx="82" cy="28" r="10"/>
+            </g>
+          </svg>
         </div>
 
-        <div class="venue-info">
-          <h3>Kottaya Convention Hall</h3>
-          <p>RTO Office Road</p>
-          <p>Kakinada, Andhra Pradesh, India</p>
+        <h3>Kottaya Convention Hall</h3>
+        <p>RTO Office Road</p>
+        <p>Kakinada, Andhra Pradesh, India</p>
 
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Kottaya+Convention+Hall+RTO+Office+Road+Kakinada"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button"
-          >
-            View location
-          </a>
-        </div>
+        <a
+          class="main-button"
+          href="https://www.google.com/maps/search/?api=1&query=Kottaya+Convention+Hall+RTO+Office+Road+Kakinada"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View location
+        </a>
       </div>
     </section>
 
     <!-- Closing -->
-    <section class="closing">
-      <img src="assets/roro-logo.png" alt="" class="closing-logo">
-      <p class="eyebrow">With love and gratitude</p>
+    <section class="closing-section">
+      <img src="assets/roro-logo.png" alt="RoRo logo" class="closing-logo">
+      <p class="eyebrow">With love</p>
       <h2>Rohith &amp; Roja</h2>
-      <p>We can't wait to celebrate with you.</p>
-      <p class="closing-tag">#RoRo</p>
+      <p>We look forward to celebrating with you!</p>
+      <p class="closing-hashtag">#RoRo</p>
     </section>
 
   </main>
