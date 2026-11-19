@@ -750,3 +750,50 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+/* Wedding photo upload QR sidebar */
+.photo-qr-sidebar {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    padding: 16px;
+    text-align: center;
+    background: #fffaf7;
+    border: 1px solid #d9b879;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    z-index: 1000;
+}
+
+.photo-qr-sidebar .qr-heading {
+    color: #ad8050;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+
+.photo-qr-sidebar img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.photo-qr-sidebar p:last-child {
+    color: #76645d;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 10px 0 0;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .photo-qr-sidebar {
+        position: static;
+        transform: none;
+        width: 150px;
+        margin: 30px auto;
+    }
+}
