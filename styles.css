@@ -350,41 +350,63 @@ img {
 
 
 /* ==========================================
-   FOUR-IMAGE GALLERY
+   THREE-IMAGE GALLERY
 ========================================== */
 
-.love-gallery {
-    padding: 85px 8%;
-    background: #fffaf7;
-}
 
-.love-gallery-grid {
+/* Three-panel wedding gallery */
+.love-gallery-grid.three-images {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 22px;
-    max-width: 1150px;
-    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+    gap: 26px;
+    max-width: 1120px;
+    margin: 35px auto;
 }
 
+/* Left and right portraits: arched windows */
 .love-image {
-    height: 350px;
+    height: 435px;
     overflow: hidden;
-    border-radius: 140px 140px 12px 12px;
-    border: 1px solid #e7cbbd;
-    background: #f8eee9;
-    box-shadow: 0 8px 25px rgba(120, 80, 60, 0.09);
+    border-radius: 190px 190px 12px 12px;
+    box-shadow: 0 8px 25px rgba(151, 111, 62, 0.10);
 }
 
 .love-image img {
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
-    transition: transform 0.8s ease;
+    display: block;
 }
 
-.love-image:hover img {
-    transform: scale(1.07);
+/* Middle: rectangular window panel */
+.love-image.ring-window {
+    height: 435px;
+    border-radius: 8px;
+    border: 2px solid #dfc18a;
+    padding: 5px;
+    background: #fffaf6;
+    box-shadow: 0 8px 28px rgba(151, 111, 62, 0.16);
+}
+
+.love-image.ring-window img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* Mobile gallery */
+@media (max-width: 700px) {
+    .love-gallery-grid.three-images {
+        grid-template-columns: 1fr;
+        max-width: 330px;
+    }
+
+    .love-image,
+    .love-image.ring-window {
+        height: 390px;
+    }
 }
 
 
