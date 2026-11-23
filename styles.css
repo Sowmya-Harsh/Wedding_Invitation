@@ -770,3 +770,22 @@ img {
     }
 
 }
+
+
+/* Three-image gallery */
+.love-gallery-grid.three-images {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 900px;
+}
+
+@media (max-width: 768px) {
+    .love-gallery-grid.three-images {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .love-gallery-grid.three-images .love-image:last-child {
+        grid-column: 1 / -1;
+        width: 75%;
+        justify-self: center;
+    }
+}
