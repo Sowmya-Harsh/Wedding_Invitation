@@ -986,3 +986,34 @@ img {
         margin-top: 5px;
     }
 }
+
+/* Soft watercolor blending */
+.love-gallery-grid img {
+    mix-blend-mode: multiply;
+    filter: saturate(0.95) contrast(0.98);
+    -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        #000 65%,
+        rgba(0, 0, 0, 0.85) 78%,
+        transparent 100%
+    );
+    mask-image: radial-gradient(
+        ellipse at center,
+        #000 65%,
+        rgba(0, 0, 0, 0.85) 78%,
+        transparent 100%
+    );
+}
+
+/* Keep all three images softly arched */
+.love-gallery-grid > * {
+    overflow: hidden;
+    border-radius: 190px 190px 9px 9px;
+}
+
+/* Middle ring-exchange artwork */
+.love-gallery-grid img:nth-child(2) {
+    object-fit: cover;
+    object-position: center 58%;
+    transform: scale(1.18);
+}
