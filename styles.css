@@ -963,3 +963,83 @@ img {
         margin-top: 5px;
     }
 }
+
+
+
+/* ==========================================
+   CENTRE NAVIGATION LINKS
+========================================== */
+
+.site-header {
+    position: relative;
+}
+
+.main-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+/* ==========================================
+   COMPACT, CENTRED SCANNER SECTION
+========================================== */
+
+.scanner-section {
+    padding: 45px 20px 55px;
+    text-align: center;
+    min-height: auto;
+}
+
+.scanner-section .section-heading {
+    margin-bottom: 20px;
+}
+
+.scanner-card {
+    width: 175px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e7d5b5;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(120, 85, 55, 0.07);
+}
+
+.scanner-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.scanner-caption {
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+/* Laptop and tablet */
+@media (max-width: 768px) {
+    .site-header {
+        flex-wrap: wrap;
+    }
+
+    .main-nav {
+        position: static;
+        transform: none;
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        padding: 8px 0;
+    }
+
+    .scanner-section {
+        padding: 40px 15px;
+    }
+
+    .scanner-card {
+        width: 165px;
+    }
+}
