@@ -840,86 +840,63 @@ img {
     letter-spacing: 2px;
 }
 
-/* Gallery layout */
+
+/* ==========================================
+   #RoRo — FINAL GALLERY LAYOUT
+   Two arched portraits + BIG centre window
+========================================== */
+
 .love-gallery-grid.three-images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.85fr 2.2fr 0.85fr;
     align-items: stretch;
-    gap: 26px;
-    max-width: 1120px;
-    margin: 35px auto;
+    gap: 24px;
+    max-width: 1400px;
+    width: 94%;
+    margin: 40px auto;
 }
 
-.love-image {
+/* Side portraits: elegant arched windows */
+.love-gallery-grid.three-images .love-image:not(.ring-window) {
     height: 435px;
     overflow: hidden;
-    border-radius: 190px 190px 12px 12px;
+    border-radius: 190px 190px 8px 8px;
 }
 
-.love-image img {
+/* Centre: BIG rectangular window */
+.love-gallery-grid.three-images .love-image.ring-window {
+    height: 435px;
+    overflow: hidden;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+}
+
+/* Centre image fills the large window */
+.love-gallery-grid.three-images .ring-window img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
-    display: block;
-}
-
-/* Centre ring-exchange image: window-like arch */
-.ring-window {
-    height: 435px;
-    border-radius: 190px 190px 12px 12px;
-    border: 1px solid #dfc18a;
-    box-shadow: 0 8px 28px rgba(151, 111, 62, 0.12);
-}
-
-/* QR section */
-.scanner-section {
-    padding: 85px 20px;
-    text-align: center;
-    background: #fff9f6;
-}
-
-.scanner-card {
-    width: 230px;
-    margin: 30px auto 0;
-    padding: 22px;
-    background: white;
-    border: 1px solid #e7d5b5;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(120, 85, 55, 0.08);
-}
-
-.scanner-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.scanner-caption {
-    margin: 15px 0 0;
-    color: #a27b43;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
+    object-position: center;
+    border-radius: 0;
+    transform: none;
 }
 
 /* Mobile layout */
 @media (max-width: 700px) {
-    .brand img {
-        width: 48px;
-        height: 48px;
-    }
-
-    .brand span {
-        font-size: 23px;
-    }
-
     .love-gallery-grid.three-images {
         grid-template-columns: 1fr;
-        max-width: 330px;
+        max-width: 380px;
+        width: 90%;
+        gap: 24px;
     }
 
-    .love-image,
-    .ring-window {
-        height: 390px;
+    .love-gallery-grid.three-images .love-image,
+    .love-gallery-grid.three-images .love-image.ring-window {
+        height: 350px;
     }
 }
 
