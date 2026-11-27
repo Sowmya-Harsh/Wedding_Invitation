@@ -1043,3 +1043,8 @@ img {
         width: 165px;
     }
 }
+
+/* Adjust centre ring-exchange image position */
+.love-gallery-grid .ring-window img {
+    object-position: center 30% !important;
+}
